@@ -1,0 +1,733 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/markdown-it/linkify-it#readme"
+
+    >linkify-it (v2.0.3)</a>
+</h1>
+<h4>Links recognition library with FULL unicode support</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkify-it">module linkify-it</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.linkify-it">
+            function <span class="apidocSignatureSpan"></span>linkify-it
+            <span class="apidocSignatureSpan">(schemas, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index">
+            function <span class="apidocSignatureSpan">linkify-it.</span>index
+            <span class="apidocSignatureSpan">(schemas, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkify-it.</span>index.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkify-it.index">module linkify-it.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.index">
+            function <span class="apidocSignatureSpan">linkify-it.</span>index
+            <span class="apidocSignatureSpan">(schemas, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkify-it.index.prototype">module linkify-it.index.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.add">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>add
+            <span class="apidocSignatureSpan">(schema, definition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.match">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>match
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.normalize">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>normalize
+            <span class="apidocSignatureSpan">(match)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.onCompile">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>onCompile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.pretest">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>pretest
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.set">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>set
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.test">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>test
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.testSchemaAt">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>testSchemaAt
+            <span class="apidocSignatureSpan">(text, schema, pos)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkify-it.index.prototype.tlds">
+            function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>tlds
+            <span class="apidocSignatureSpan">(list, keepOld)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkify-it" id="apidoc.module.linkify-it">module linkify-it</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.linkify-it" id="apidoc.element.linkify-it.linkify-it">
+        function <span class="apidocSignatureSpan"></span>linkify-it
+        <span class="apidocSignatureSpan">(schemas, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LinkifyIt(schemas, options) {
+  if (!(this instanceof LinkifyIt)) {
+    return new LinkifyIt(schemas, options);
+  }
+
+  if (!options) {
+    if (isOptionsObj(schemas)) {
+      options = schemas;
+      schemas = {};
+    }
+  }
+
+  this.__opts__           = assign({}, defaultOptions, options);
+
+  // Cache last tested result. Used to skip repeating steps on next `match` call.
+  this.__index__          = -1;
+  this.__last_index__     = -1; // Next scan position
+  this.__schema__         = &#x27;&#x27;;
+  this.__text_cache__     = &#x27;&#x27;;
+
+  this.__schemas__        = assign({}, defaultSchemas, schemas);
+  this.__compiled__       = {};
+
+  this.__tlds__           = tlds_default;
+  this.__tlds_replaced__  = false;
+
+  this.re = {};
+
+  compile(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index" id="apidoc.element.linkify-it.index">
+        function <span class="apidocSignatureSpan">linkify-it.</span>index
+        <span class="apidocSignatureSpan">(schemas, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LinkifyIt(schemas, options) {
+  if (!(this instanceof LinkifyIt)) {
+    return new LinkifyIt(schemas, options);
+  }
+
+  if (!options) {
+    if (isOptionsObj(schemas)) {
+      options = schemas;
+      schemas = {};
+    }
+  }
+
+  this.__opts__           = assign({}, defaultOptions, options);
+
+  // Cache last tested result. Used to skip repeating steps on next `match` call.
+  this.__index__          = -1;
+  this.__last_index__     = -1; // Next scan position
+  this.__schema__         = &#x27;&#x27;;
+  this.__text_cache__     = &#x27;&#x27;;
+
+  this.__schemas__        = assign({}, defaultSchemas, schemas);
+  this.__compiled__       = {};
+
+  this.__tlds__           = tlds_default;
+  this.__tlds_replaced__  = false;
+
+  this.re = {};
+
+  compile(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkify-it.index" id="apidoc.module.linkify-it.index">module linkify-it.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.index" id="apidoc.element.linkify-it.index.index">
+        function <span class="apidocSignatureSpan">linkify-it.</span>index
+        <span class="apidocSignatureSpan">(schemas, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LinkifyIt(schemas, options) {
+  if (!(this instanceof LinkifyIt)) {
+    return new LinkifyIt(schemas, options);
+  }
+
+  if (!options) {
+    if (isOptionsObj(schemas)) {
+      options = schemas;
+      schemas = {};
+    }
+  }
+
+  this.__opts__           = assign({}, defaultOptions, options);
+
+  // Cache last tested result. Used to skip repeating steps on next `match` call.
+  this.__index__          = -1;
+  this.__last_index__     = -1; // Next scan position
+  this.__schema__         = &#x27;&#x27;;
+  this.__text_cache__     = &#x27;&#x27;;
+
+  this.__schemas__        = assign({}, defaultSchemas, schemas);
+  this.__compiled__       = {};
+
+  this.__tlds__           = tlds_default;
+  this.__tlds_replaced__  = false;
+
+  this.re = {};
+
+  compile(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkify-it.index.prototype" id="apidoc.module.linkify-it.index.prototype">module linkify-it.index.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.add" id="apidoc.element.linkify-it.index.prototype.add">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>add
+        <span class="apidocSignatureSpan">(schema, definition)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function add(schema, definition) {
+  this.__schemas__[schema] = definition;
+  compile(this);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+var linkify = require(&#x27;linkify-it&#x27;)();
+
+// Reload full tlds list &#x26; add unofficial `.onion` domain.
+linkify
+  .tlds(require(&#x27;tlds&#x27;))          // Reload with full tlds list
+  .tlds(&#x27;onion&#x27;, true)            // Add unofficial `.onion` domain
+  .linkify.<span class="apidocCodeKeywordSpan">add</span>(&#x27;git:&#x27;, &#x27;http:&#x27;)   // Add `git:` ptotocol as &#x22
+;alias&#x22;
+  .linkify.add(&#x27;ftp:&#x27;, null)      // Disable `ftp:` ptotocol
+  .set({ fuzzyIP: true });        // Enable IPs in fuzzy links (without schema)
+
+console.log(linkify.test(&#x27;Site github.com!&#x27;));  // true
+
+console.log(linkify.match(&#x27;Site github.com!&#x27;)); // [ {
+//   schema: &#x22;&#x22;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.match" id="apidoc.element.linkify-it.index.prototype.match">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>match
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function match(text) {
+  var shift = 0, result = [];
+
+  // Try to take previous element from cache, if .test() called before
+  if (this.__index__ &#x3e;= 0 &#x26;&#x26; this.__text_cache__ === text) {
+    result.push(createMatch(this, shift));
+    shift = this.__last_index__;
+  }
+
+  // Cut head if cache was used
+  var tail = shift ? text.slice(shift) : text;
+
+  // Scan string until end reached
+  while (this.test(tail)) {
+    result.push(createMatch(this, shift));
+
+    tail = tail.slice(this.__last_index__);
+    shift += this.__last_index__;
+  }
+
+  if (result.length) {
+    return result;
+  }
+
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  .tlds(&#x27;onion&#x27;, true)            // Add unofficial `.onion` domain
+  .linkify.add(&#x27;git:&#x27;, &#x27;http:&#x27;)   // Add `git:` ptotocol as &#x22;alias&#x22;
+  .linkify.add(&#x27;ftp:&#x27;, null)      // Disable `ftp:` ptotocol
+  .set({ fuzzyIP: true });        // Enable IPs in fuzzy links (without schema)
+
+console.log(linkify.test(&#x27;Site github.com!&#x27;));  // true
+
+console.log(linkify.<span class="apidocCodeKeywordSpan">match</span>(&#x27;Site github.com!&#x27;)); // [ {
+//   schema: &#x22;&#x22;,
+//   index: 5,
+//   lastIndex: 15,
+//   raw: &#x22;github.com&#x22;,
+//   text: &#x22;github.com&#x22;,
+//   url: &#x22;http://github.com&#x22;,
+// } ]
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.normalize" id="apidoc.element.linkify-it.index.prototype.normalize">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>normalize
+        <span class="apidocSignatureSpan">(match)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function normalize(match) {
+
+  // Do minimal possible changes by default. Need to collect feedback prior
+  // to move forward https://github.com/markdown-it/linkify-it/issues/1
+
+  if (!match.schema) { match.url = &#x27;http://&#x27; + match.url; }
+
+  if (match.schema === &#x27;mailto:&#x27; &#x26;&#x26; !/^mailto:/i.test(match.url)) {
+    match.url = &#x27;mailto:&#x27; + match.url;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    return 0;
+  };
+}
+
+function createNormalizer() {
+  return function (match, self) {
+    self.<span class="apidocCodeKeywordSpan">normalize</span>(match);
+  };
+}
+
+// Schemas compiler. Build regexps.
+//
+function compile(self) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.onCompile" id="apidoc.element.linkify-it.index.prototype.onCompile">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>onCompile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onCompile() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Load &#x26; clone RE patterns.
+var re = self.re = require(&#x27;./lib/re&#x27;)(self.__opts__);
+
+// Define dynamic patterns
+var tlds = self.__tlds__.slice();
+
+self.<span class="apidocCodeKeywordSpan">onCompile</span>();
+
+if (!self.__tlds_replaced__) {
+  tlds.push(tlds_2ch_src_re);
+}
+tlds.push(re.src_xn);
+
+re.src_tlds = tlds.join(&#x27;|&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.pretest" id="apidoc.element.linkify-it.index.prototype.pretest">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>pretest
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pretest(text) {
+  return this.re.pretest.test(text);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+### .test(text)
+
+Searches linkifiable pattern and returns `true` on success or `false` on fail.
+
+
+### .<span class="apidocCodeKeywordSpan">pretest</span>(text)
+
+Quick check if link MAY BE can exist. Can be used to optimize more expensive
+`.test()` calls. Return `false` if link can not be found, `true` - if `.test()`
+call needed to know exactly.
+
+
+### .testSchemaAt(text, name, offset)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.set" id="apidoc.element.linkify-it.index.prototype.set">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>set
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function set(options) {
+  this.__opts__ = assign(this.__opts__, options);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Reload full tlds list &#x26; add unofficial `.onion` domain.
+linkify
+  .tlds(require(&#x27;tlds&#x27;))          // Reload with full tlds list
+  .tlds(&#x27;onion&#x27;, true)            // Add unofficial `.onion` domain
+  .linkify.add(&#x27;git:&#x27;, &#x27;http:&#x27;)   // Add `git:` ptotocol as &#x22;alias&#x22;
+  .linkify.add(&#x27;ftp:&#x27;, null)      // Disable `ftp:` ptotocol
+  .<span class="apidocCodeKeywordSpan">set</span>({ fuzzyIP: true });        // Enable IPs in fuzzy links (without schema)
+
+console.log(linkify.test(&#x27;Site github.com!&#x27;));  // true
+
+console.log(linkify.match(&#x27;Site github.com!&#x27;)); // [ {
+//   schema: &#x22;&#x22;,
+//   index: 5,
+//   lastIndex: 15,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.test" id="apidoc.element.linkify-it.index.prototype.test">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>test
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function test(text) {
+  // Reset scan cache
+  this.__text_cache__ = text;
+  this.__index__      = -1;
+
+  if (!text.length) { return false; }
+
+  var m, ml, me, len, shift, next, re, tld_pos, at_pos;
+
+  // try to scan for link with schema - that&#x27;s the most simple rule
+  if (this.re.schema_test.test(text)) {
+    re = this.re.schema_search;
+    re.lastIndex = 0;
+    while ((m = re.exec(text)) !== null) {
+      len = this.testSchemaAt(text, m[2], re.lastIndex);
+      if (len) {
+        this.__schema__     = m[2];
+        this.__index__      = m.index + m[1].length;
+        this.__last_index__ = m.index + m[0].length + len;
+        break;
+      }
+    }
+  }
+
+  if (this.__opts__.fuzzyLink &#x26;&#x26; this.__compiled__[&#x27;http:&#x27;]) {
+    // guess schemaless links
+    tld_pos = text.search(this.re.host_fuzzy_test);
+    if (tld_pos &#x3e;= 0) {
+      // if tld is located after found link - no need to check fuzzy pattern
+      if (this.__index__ &#x3c; 0 || tld_pos &#x3c; this.__index__) {
+        if ((ml = text.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) !== null) {
+
+          shift = ml.index + ml[1].length;
+
+          if (this.__index__ &#x3c; 0 || shift &#x3c; this.__index__) {
+            this.__schema__     = &#x27;&#x27;;
+            this.__index__      = shift;
+            this.__last_index__ = ml.index + ml[0].length;
+          }
+        }
+      }
+    }
+  }
+
+  if (this.__opts__.fuzzyEmail &#x26;&#x26; this.__compiled__[&#x27;mailto:&#x27;]) {
+    // guess schemaless emails
+    at_pos = text.indexOf(&#x27;@&#x27;);
+    if (at_pos &#x3e;= 0) {
+      // We can&#x27;t skip this check, because this cases are possible:
+      // 192.168.1.1@gmail.com, my.in@example.com
+      if ((me = text.match(this.re.email_fuzzy)) !== null) {
+
+        shift = me.index + me[1].length;
+        next  = me.index + me[0].length;
+
+        if (this.__index__ &#x3c; 0 || shift &#x3c; this.__index__ ||
+            (shift === this.__index__ &#x26;&#x26; next &#x3e; this.__last_index__)) {
+          this.__schema__     = &#x27;mailto:&#x27;;
+          this.__index__      = shift;
+          this.__last_index__ = next;
+        }
+      }
+    }
+  }
+
+  return this.__index__ &#x3e;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+linkify
+  .tlds(require(&#x27;tlds&#x27;))          // Reload with full tlds list
+  .tlds(&#x27;onion&#x27;, true)            // Add unofficial `.onion` domain
+  .linkify.add(&#x27;git:&#x27;, &#x27;http:&#x27;)   // Add `git:` ptotocol as &#x22;alias&#x22;
+  .linkify.add(&#x27;ftp:&#x27;, null)      // Disable `ftp:` ptotocol
+  .set({ fuzzyIP: true });        // Enable IPs in fuzzy links (without schema)
+
+console.log(linkify.<span class="apidocCodeKeywordSpan">test</span>(&#x27;Site github.com!&#x27;));  // true
+
+console.log(linkify.match(&#x27;Site github.com!&#x27;)); // [ {
+//   schema: &#x22;&#x22;,
+//   index: 5,
+//   lastIndex: 15,
+//   raw: &#x22;github.com&#x22;,
+//   text: &#x22;github.com&#x22;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.testSchemaAt" id="apidoc.element.linkify-it.index.prototype.testSchemaAt">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>testSchemaAt
+        <span class="apidocSignatureSpan">(text, schema, pos)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function testSchemaAt(text, schema, pos) {
+  // If not supported schema check requested - terminate
+  if (!this.__compiled__[schema.toLowerCase()]) {
+    return 0;
+  }
+  return this.__compiled__[schema.toLowerCase()].validate(text, pos, this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### .pretest(text)
+
+Quick check if link MAY BE can exist. Can be used to optimize more expensive
+`.test()` calls. Return `false` if link can not be found, `true` - if `.test()`
+call needed to know exactly.
+
+
+### .<span class="apidocCodeKeywordSpan">testSchemaAt</span>(text, name, offset)
+
+Similar to `.test()` but checks only specific protocol tail exactly at given
+position. Returns length of found pattern (0 on fail).
+
+
+### .match(text)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkify-it.index.prototype.tlds" id="apidoc.element.linkify-it.index.prototype.tlds">
+        function <span class="apidocSignatureSpan">linkify-it.index.prototype.</span>tlds
+        <span class="apidocSignatureSpan">(list, keepOld)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tlds(list, keepOld) {
+  list = Array.isArray(list) ? list : [ list ];
+
+  if (!keepOld) {
+    this.__tlds__ = list.slice();
+    this.__tlds_replaced__ = true;
+    compile(this);
+    return this;
+  }
+
+  this.__tlds__ = this.__tlds__.concat(list)
+                                  .sort()
+                                  .filter(function (el, idx, arr) {
+                                    return el !== arr[idx - 1];
+                                  })
+                                  .reverse();
+
+  compile(this);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##### Example 1
+
+```js
+var linkify = require(&#x27;linkify-it&#x27;)();
+
+// Reload full tlds list &#x26; add unofficial `.onion` domain.
+linkify
+  .<span class="apidocCodeKeywordSpan">tlds</span>(require(&#x27;tlds&#x27;))          // Reload with full tlds list
+  .tlds(&#x27;onion&#x27;, true)            // Add unofficial `.onion` domain
+  .linkify.add(&#x27;git:&#x27;, &#x27;http:&#x27;)   // Add `git:` ptotocol as &#x22;alias&#x22;
+  .linkify.add(&#x27;ftp:&#x27;, null)      // Disable `ftp:` ptotocol
+  .set({ fuzzyIP: true });        // Enable IPs in fuzzy links (without schema)
+
+console.log(linkify.test(&#x27;Site github.com!&#x27;));  // true
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
